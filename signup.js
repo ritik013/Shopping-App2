@@ -29,7 +29,7 @@ function handleSignup() {
     localStorage.setItem('users', JSON.stringify(users));
   
     // Redirect the user to the login page after signup
-    window.location.href = '../login/index.html';
+    window.location.href = 'login.html';
   }
   
   document.getElementById('signupButton').addEventListener('click', handleSignup);

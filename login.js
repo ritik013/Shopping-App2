@@ -22,7 +22,7 @@ function handleLogin() {
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
   
     // Redirect the user to the shop page after successful login
-    window.location.href = '../shop/index.html';
+    window.location.href = 'shop.html';
   }
   
   document.getElementById('loginButton').addEventListener('click', handleLogin);

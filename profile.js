@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentUser = JSON.parse(localStorage.getItem('currentUser'));
       if (!currentUser) {
         // Redirect the user to the login page if not logged in
-        window.location.href = '../signup/index.html';
+        window.location.href = 'signup.html';
       } else {
         // Show the user's name on the page
         userName.textContent = `${currentUser.firstName} ${currentUser.lastName}`;
@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // Clear the current user from localStorage
       localStorage.removeItem('currentUser');
       // Redirect the user to the login page after logout
-      window.location.href = '../login/index.html';
+      window.location.href = 'login.html';
     }
   
     // Check if the user is logged in when the page loads
