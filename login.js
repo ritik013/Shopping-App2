@@ -10,14 +10,14 @@ function handleLogin() {
     const currentUser = users.find(u => u.email === email && u.password === password);
     if (!currentUser) {
       console.error('Invalid email or password');
-      // Show an error message to the user or handle it as per your UI
+      alert('Invalid email or password');
       return;
     }
   
     // Generate a random token and store it in local storage
    // const token = generateToken(); // Implement this function to generate a random token
     //localStorage.setItem('token', token);//
-  
+    
     // Save the current user data in local storage
     localStorage.setItem('currentUser', JSON.stringify(currentUser));
   

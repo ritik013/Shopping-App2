@@ -20,7 +20,8 @@ function handleSignup() {
     const existingUser = users.find(u => u.email === email);
     if (existingUser) {
       console.error('User already exists with this email');
-      // Show an error message to the user or handle it as per your UI
+      alert('User already exists with this email');
+     
       return;
     }
   

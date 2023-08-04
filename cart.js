@@ -23,6 +23,11 @@ calculateTotal()
 
 //Rendering cart items
 function renderCartSection(){
+  if(cartItems.length === 0){
+    setTimeout(() => {
+     window.location.href = "shop.html";
+    }, 800);
+   }
     const searchHTML = cartItems.map((item) => renderItems(item));
     document.getElementById("cart-items").innerHTML =  searchHTML.join("");
 }
@@ -87,6 +92,7 @@ function renderItems(item) {
     renderCartSection()
     renderList()
     calculateTotal()
+    window.location.reload();
   }
 
   //Razor-pay 
